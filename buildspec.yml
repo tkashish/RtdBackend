@@ -1,63 +1,13 @@
 version: 0.2
 
-env:
-  variables:
-    key1: "value"
-    key2: "value"
-  parameter-store:
-    key1: "value"
-    key2: "value"
-
 phases:
-  install:
-    commands:
-      - command
-      - command
-    finally:
-      - command
-      - command
-  pre_build:
-    commands:
-      - command
-      - command
-    finally:
-      - command
-      - command
   build:
     commands:
-      - command
-      - command
-    finally:
-      - command
-      - command
+      - echo Build started on `date`
   post_build:
     commands:
-      - command
-      - command
-    finally:
-      - command
-      - command
+      - echo Build completed on `date`
 artifacts:
   files:
-    - location
-    - location
-    - name
+    - src/*
   discard-paths: yes
-  base-directory: location
-  secondary-artifacts:
-    artifactIdentifier:
-      files:
-        - location
-        - location
-      discard-paths: yes
-      base-directory: location
-    artifactIdentifier:
-      files:
-        - location
-        - location
-      discard-paths: yes
-      base-directory: location
-cache:
-  paths:
-    - path
-    - path
