@@ -1,14 +1,14 @@
 version: 0.0
 os: linux
 files:
-  - source: /index.html
+  - source: src/index.html
     destination: /var/www/html/
 hooks:
   ApplicationStart:
-    - location: start.sh
+    - location: src/scripts/start.sh
       timeout: 300
       runas: root
   ApplicationStop:
-    - location: stop.sh
+    - location: src/scripts/stop.sh
       timeout: 300
       runas: root
