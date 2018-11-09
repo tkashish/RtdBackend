@@ -1,5 +1,6 @@
 #! /bin/bash
 set -xeo pipefail
 
+pwd
 rm -f /var/www/html/index.html
-cp ../index.html /var/www/html/
+cp src/index.html /var/www/html/
