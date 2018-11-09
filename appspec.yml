@@ -1,5 +1,12 @@
 version: 0.0
 os: linux
+permissions:
+  - object: scripts
+    pattern: "**"
+    owner: root
+    mode: 700
+    type:
+      - file
 hooks:
   AfterInstall:
     - location: scripts/update.sh
