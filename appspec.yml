@@ -1,9 +1,10 @@
 version: 0.0
 os: linux
-files:
-  - source: src/index.html
-    destination: /var/www/html/
 hooks:
+  AfterInstall:
+    - location: scripts/update.sh
+      timeout: 300
+      runas: root
   ApplicationStart:
     - location: src/scripts/start.sh
       timeout: 300
