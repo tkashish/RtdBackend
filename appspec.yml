@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 permissions:
   - object: src/scripts
-    pattern: "**"
+    pattern: "*.sh"
     owner: root
     mode: 700
     type:
