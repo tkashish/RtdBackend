@@ -3,4 +3,5 @@ set -xeo pipefail
 
 pwd
 rm -f /var/www/html/index.html
-cp src/index.html /var/www/html/
+cp /tmp/index.html /var/www/html/
+rm -f /tmp/index.html
