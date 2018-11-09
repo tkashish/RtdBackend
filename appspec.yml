@@ -1,15 +1,15 @@
 version: 0.0
 os: linux
-permissions:
-  - object: src/scripts
-    pattern: "*.sh"
-    owner: root
-    mode: 700
-    type:
-      - file
+#permissions:
+#  - object: src/scripts
+#    pattern: "*.sh"
+#    owner: root
+#    mode: 700
+#    type:
+#      - file
 hooks:
   AfterInstall:
-    - location: scripts/update.sh
+    - location: src/scripts/update.sh
       timeout: 300
       runas: root
   ApplicationStart:

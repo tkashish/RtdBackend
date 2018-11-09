@@ -4,6 +4,8 @@ phases:
   build:
     commands:
       - echo Build started on `date`
+      - ls -al src/scripts/
+      - chmod +x src/scripts/*
   post_build:
     commands:
       - echo Build completed on `date`
